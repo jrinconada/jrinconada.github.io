@@ -21,3 +21,26 @@ $("#navbar-sections a").on('click', function(event) {
 $('.carousel').carousel({
   interval: 3000
 })
+
+$(document).ready(function() {
+    $("form").submit(function(event) {
+        event.preventDefault();
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var message = $("#message").val();
+
+        $("#status").html("");
+
+        $.post("contactform.php", {
+            name : name,
+            email : email,
+            message : message
+        }, function(response, status, xhr) {
+            if(status == "success") {
+                $("#status").html(response);
+            } else {
+                $("#status").html("<p class=\"text-danger lead\"><b>Message not send</b></p>");
+            }
+        });
+    });
+});

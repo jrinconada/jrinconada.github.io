@@ -42,13 +42,13 @@
 .section-title {
     padding: 120px;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .section-title-xs {
     padding: 40px;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .section {
