@@ -18,7 +18,8 @@
     width: 28px;
     height: 28px;
     position: absolute;
-    transform: translate(10px, 11px);
+    top: 11px;
+    left: 10px;
     -webkit-filter: drop-shadow(2px 2px 2px #333);
     filter: drop-shadow(2px 2px 2px #333);
 }
